@@ -1,7 +1,7 @@
 # disboxpy
 A perfectly asynchronous DisBox API framework.
 ## How to install
-- install this package with pip (later)
+- install this package with pip
 ```sh
 pip install disboxpy
 ```
