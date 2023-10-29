@@ -1,15 +1,15 @@
-# PyBox
+# disboxpy
 A perfectly asynchronous DisBox API framework.
 ## How to install
 - install this package with pip (later)
 ```sh
-pip install pybox
+pip install disboxpy
 ```
 - import to your Python project
 ```python
-from pybox import PyBox
+from disboxpy import DisBox
 
-pb_client = PyBox(your_webhook_url_here)
+client = DisBox(your_webhook_url)
 ```
 ## How to use
 ### For example, you can get information about any file by id or file's name.
@@ -17,7 +17,7 @@ pb_client = PyBox(your_webhook_url_here)
 import asyncio
 
 async def main():
-  print(await pb_client.get_file_info(10704, "test folder"))
+  print(await client.get_file_info(10704, "test folder"))
 
 if __name__ == "__main__":
   asyncio.run(main())
@@ -40,7 +40,7 @@ Output:
 import asyncio
 
 async def main():
-  await pb_client.download_file(10704, "test folder")
+  await client.download_file(10704, "test folder")
 
 if __name__ == "__main__":
   asyncio.run(main())
@@ -50,7 +50,7 @@ Output:
 [FILE] test_image.jpg file is successfully downloaded! (47.23 KB)
 ```
 
-Other examples in `examples` directory (not now). You can check it.
+Other examples in `examples` directory. You can check it.
 ## Todo
 - upload_file & upload_folder
 - delete_file & delete_folder
