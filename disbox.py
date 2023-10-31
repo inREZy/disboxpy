@@ -7,8 +7,8 @@ import random
 
 from datetime import datetime
 
-from utils.webhook import WebhookClient
-from utils.file_util import FileUtil
+from .utils import WebhookClient
+from .utils import FileUtil
 
 SERVER_URL = "https://disboxserver.azurewebsites.net"
 
