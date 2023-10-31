@@ -8,6 +8,7 @@ setup(
    packages = find_packages(),
    author = 'inREZy',
    author_email = 'xardmax2000@gmail.com',
+   url = 'https://github.com/inREZy/disboxpy',
    packages = ['disboxpy'],
    install_requires = ['httpx', 'asyncio', 'aiofiles', 'hashlib', 'os', 'random', 'datetime']
 )
