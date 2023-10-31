@@ -1,7 +1,7 @@
 # disboxpy
 A perfectly asynchronous DisBox API framework.
 ## How to install
-- install this package with pip (later)
+- install this package with pip
 ```sh
 pip install disboxpy
 ```
@@ -40,17 +40,17 @@ Output:
 import asyncio
 
 async def main():
-  await client.download_file(10704, "test folder")
+  await client.download_file("test_image2.jpg")
 
 if __name__ == "__main__":
   asyncio.run(main())
 ```
 Output:
 ```
-[FILE] test_image.jpg file is successfully downloaded! (47.23 KB)
+[FILE] test_image2.jpg file is successfully downloaded! (67.31 KB)
 ```
 
-Other examples in `examples` directory. You can check it.
+Other examples in [examples](https://github.com/inREZy/disboxpy/tree/main/examples) directory. You can check it now.
 ## Todo
 - upload_file & upload_folder
 - delete_file & delete_folder
