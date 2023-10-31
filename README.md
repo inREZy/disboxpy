@@ -15,6 +15,9 @@ client = DisBox(your_webhook_url)
 ### For example, you can get information about any file by id or file's name.
 ```python
 import asyncio
+from disboxpy import DisBox
+
+client = DisBox(your_webhook_url)
 
 async def main():
   print(await client.get_file_info(10704, "test folder"))
@@ -38,6 +41,9 @@ Output:
 ### Or if you want to download something
 ```python
 import asyncio
+from disboxpy import DisBox
+
+client = DisBox(your_webhook_url)
 
 async def main():
   await client.download_file("test_image2.jpg")
